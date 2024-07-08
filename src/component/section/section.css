@@ -1,0 +1,12 @@
+.section-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px !important;
+}
+
+.section-card__text{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    font-family: sans-serif;
+}
