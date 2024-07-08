@@ -10,3 +10,34 @@
     color: #fff;
     font-family: sans-serif;
 }
+.section-card--box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.section-card--box-wrapper{
+    background-color: #fff;
+    padding: 30px 20px 15px 20px; 
+    border-radius: 12px;
+}
+.section-card--box-title{
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.section-card--box-author{
+    font-weight: 700;
+    color: #333333;
+    font-size: 14px;
+}
+.section-card--box-num{
+    background-color: #EFE6FD;
+    padding:2px 12px;
+    border-radius: 5px;
+    color:#9654F4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    align-items: center;
+}
