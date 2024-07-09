@@ -8,11 +8,9 @@ import './auth.css';
 function Auth() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [load, setLoad] = useState(false);
   const redirect = useNavigate();
   const userLogin = async (e) => {
     e.preventDefault();
-    // setLoad(true);
 
     const userData = {
       username: username,
@@ -21,7 +19,6 @@ function Auth() {
 
     if (userData.username.length === 0 || userData.password.length === 0) {
       alert('Please enter a username and password');
-      // setLoad(false);
     } else {
       try {
         const res = await LOGIN.auth(userData);
@@ -38,12 +35,10 @@ function Auth() {
             theme: "light",
           });
           setTimeout(() => {
-            // setLoad(false);
             redirect("/");
           }, 1000); 
         }
       } catch (error) {
-        setLoad(false);
         toast.error('Username yoki Password xato', {
           position: "top-right",
           autoClose: 1000,

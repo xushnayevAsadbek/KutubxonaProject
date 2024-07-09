@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Error } from '../Page/error/error'
 import Header from '../header/header'
 import Section from '../section/section'
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Auth from '../Page/auth/auth'
 function App() {
