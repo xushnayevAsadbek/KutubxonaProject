@@ -107,6 +107,9 @@ localStorage.setItem('task', JSON.stringify(task));
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={handleCloseModal}>&times;</span>
+            <p className='modal-text'>
+                Create a book
+                </p>
             <div>
             <form className="form" onSubmit={(e)=>addTask(e)}>
                <div className="form--card">
@@ -185,7 +188,7 @@ localStorage.setItem('task', JSON.stringify(task));
             <p className='section-card--box-author'>
             {item.enrol}
             </p>
-            <span className='section-card--box-num'>{item.data}</span>
+            <p className='section-card--box-num'>{item.date} pages</p>
             </div>
             <div style={{
                 display:'flex',

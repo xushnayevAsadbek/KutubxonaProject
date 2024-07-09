@@ -1,0 +1,105 @@
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .social-button:first-of-type {
+    background-color: #4285f4;
+    color: #fff;
+  }
+  
+  .social-button:last-of-type {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .separator {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .separator::before {
+    left: 0;
+  }
+  
+  .separator::after {
+    right: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group input.error {
+    border-color: red;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ee;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .sumbit-button--text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sumbit-button--text a {
+    color: #6200ee;
+    text-decoration: none;
+  }
+  
