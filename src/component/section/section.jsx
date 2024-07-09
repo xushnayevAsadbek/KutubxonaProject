@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import headerIcon from '../../../public/img/logo.svg'
 import './section.css'
+import { Link } from 'react-router-dom';
 function Section() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const handleOpenModal = () => {
@@ -93,8 +94,8 @@ localStorage.setItem('task', JSON.stringify(task));
         <div>
         </div>
         <div>
-            <a href="#"><BellOutlined  style={{
-              fontSize:'25px'}}/></a>
+            <Link to="/auth/login"><BellOutlined  style={{
+              fontSize:'25px'}}/></Link>
         </div>
 
        </header>

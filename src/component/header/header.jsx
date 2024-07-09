@@ -1,6 +1,7 @@
 import './header.css'
 import headerIcon from '../../../public/img/logo.svg'
 import { BellOutlined, SearchOutlined } from '@ant-design/icons'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -15,8 +16,8 @@ function Header() {
         <div>
         </div>
         <div>
-            <a href="#"><BellOutlined  style={{
-              fontSize:'25px'}}/></a>
+            <Link to="/auth/login"><BellOutlined  style={{
+              fontSize:'25px'}}/></Link>
         </div>
 
        </header>

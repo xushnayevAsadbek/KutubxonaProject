@@ -12,7 +12,6 @@ function App() {
     <Route path="/auth/login" element={<Auth/>} />
     <Route path='/' element={<Header/>}/>
     <Route index element={<Section/>} />
-
     <Route path="*" element={<Error/>}/>
     </Routes>
     </BrowserRouter>
