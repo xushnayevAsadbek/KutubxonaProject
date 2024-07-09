@@ -8,7 +8,6 @@ export const Layout = () => {
     return (
 <>
 <Header />
-<Section/>
-<Outlet />
+<Outlet/>
 </>    )
 }

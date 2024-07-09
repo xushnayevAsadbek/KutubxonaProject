@@ -7,8 +7,8 @@ function Header() {
       <>
        <header className='header container'>
         <div className='header-box'>
-            <a href="#"><img src={headerIcon} alt="" /></a>
-           <button className='header-box--card'><SearchOutlined  style={{
+            <a href="#" className='cursor-pointer'><img src={headerIcon} alt="" /></a>
+           <button className='header-box--card cursor-pointer'><SearchOutlined  style={{
             fontSize:'20px'
            }}/><p className='header-box__text'>Search for any training you want</p></button>
         </div>

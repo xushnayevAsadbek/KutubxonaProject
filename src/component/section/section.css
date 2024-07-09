@@ -1,3 +1,125 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .form--card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 0 15px 30px;
+    font-size: 20px;
+    text-align: left;
+    }
+    .form--card:nth-child(1){
+        margin-top: 20px;
+    }
+
+#task_title{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(225, 224, 224);
+    overflow: hidden;
+    outline: none;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+#task_email{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(225, 224, 224);
+    overflow: hidden;
+    outline: none;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+#task_phone{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(225, 224, 224);
+    overflow: hidden;
+    outline: none;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+#task_enroll{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(225, 224, 224);
+    overflow: hidden;
+    outline: none;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+#task_date{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(225, 224, 224);
+    overflow: hidden;
+    outline: none;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+.form--card-btn{
+    display: flex;
+    gap: 95px;
+    justify-content: center;
+}
+.form--card__btn{
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+    width: 150px;
+    background-color: #6200EE;
+    font-size: 16px;
+    line-height: 20px;
+}
+.form--card__btn-close{
+    color: #6200EE;
+    background-color: #fff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    width: 150px;
+    outline: none;
+    border: 1px solid #6200EE;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .section-card{
     display: flex;
     justify-content: space-between;
@@ -24,7 +146,14 @@
 }
 .section-card--box-title{
     padding-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 19.5px;
+    font-size: 16px;
+}
+.section-card--box-text{
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
 }
 .section-card--box-author{
     font-weight: 700;
@@ -33,11 +162,12 @@
 }
 .section-card--box-num{
     background-color: #EFE6FD;
-    padding:2px 12px;
+    padding:5px 12px;
     border-radius: 5px;
     color:#9654F4;
     font-size: 12px;
     font-weight: 400;
-    line-height: 15px;
+    /* line-height: 15px; */
     align-items: center;
+    width: auto;
 }
