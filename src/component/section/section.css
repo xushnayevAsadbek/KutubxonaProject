@@ -161,6 +161,10 @@
     width: 330px;
     height: 60px;
     padding-right: 15px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .section-card--box-author{
     font-weight: 700;
