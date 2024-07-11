@@ -8,13 +8,15 @@ import './auth.css';
 function Auth() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [email , setEmail] = useState('')
   const redirect = useNavigate();
   const userLogin = async (e) => {
     e.preventDefault();
 
     const userData = {
       username: username,
-      password: password
+      password: password,
+      email: email
     };
 
     if (userData.username.length === 0 || userData.password.length === 0) {
@@ -71,7 +73,7 @@ function Auth() {
             placeholder="Enter your name"
           />
         </div>
-        {/* <div className="form-group">
+        <div className="form-group">
           <label htmlFor="email">Your email</label>
           <input
             type="email"
@@ -81,7 +83,7 @@ function Auth() {
             placeholder="Enter your email"
             className={!email && 'error'}
           />
-        </div> */}
+        </div>
         <div className="form-group">
           <label htmlFor="username">Your password</label>
           <input
